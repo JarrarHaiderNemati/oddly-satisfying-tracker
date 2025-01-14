@@ -1,0 +1,329 @@
+/* Base Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background-color: #ffffff; /* Light mode background */
+  color: #333333; /* Light mode text */
+}
+
+.header {
+  background-color: #4CAF50; /* Light mode header background */
+  color: white; /* Light mode header text */
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.container {
+  padding: 1rem;
+  max-width: 800px;
+  margin: auto;
+  background-color: #ffffff; /* Light mode container background */
+  color: #333333; /* Light mode text */
+}
+
+.form-section,
+.feed-section {
+  margin-bottom: 2rem;
+}
+
+textarea,
+select,
+button {
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #ffffff; /* Light mode input background */
+  color: #333333; /* Light mode text */
+}
+
+textarea:focus,
+input:focus,
+select:focus {
+  border-color: #4CAF50; /* Light mode focus border */
+  outline: none;
+}
+
+button {
+  background-color: #4CAF50; /* Light mode button background */
+  color: white; /* Light mode button text */
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #45a049; /* Light mode button hover */
+}
+
+.feed-section #feed {
+  border-top: 1px solid #ccc;
+  padding-top: 1rem;
+}
+
+.feed-section #feed div {
+  padding: 1rem;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 1rem;
+}
+
+.footer {
+  text-align: center;
+  background-color: #f4f4f4; /* Light mode footer background */
+  padding: 1rem 0;
+  color: #555; /* Light mode footer text */
+}
+
+/* Delete and Edit Buttons */
+.del-b {
+  margin-left: 20px;
+  background-color: red; /* Light mode delete button */
+  color: white;
+  width: 100px;
+}
+
+.ed-b {
+  background-color: cyan; /* Light mode edit button */
+  color: black;
+  margin-left: 10px;
+  width: 100px;
+}
+
+#food li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Refill Div */
+.re-fill-div {
+  background-color: purple;
+  position: absolute;
+  top: 450px;
+  left: 950px;
+  display: none;
+}
+
+#refill {
+  width: 92%;
+}
+
+/* Search Bar */
+.search-section {
+  margin-bottom: 1.5rem;
+  text-align: center; /* Center-align the search bar */
+}
+
+#search {
+  width: 80%; /* Adjust width as needed */
+  max-width: 500px; /* Limit the width for larger screens */
+  padding: 0.8rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #ffffff; /* Light mode search bar */
+  color: #333333;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  transition: box-shadow 0.3s ease;
+}
+
+#search:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Slightly stronger shadow */
+}
+
+#search:focus {
+  border-color: #4CAF50; /* Green highlight */
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+  background-color: #1c1c1c; /* Dark gray background */
+  color: #f5f5f5; /* Light text */
+}
+
+.header.dark-mode {
+  background-color: #242424; /* Slightly darker header */
+  color: #ffffff; /* Bright white text */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.container.dark-mode {
+  background-color: #2a2a2a; /* Softer dark container */
+  color: #f5f5f5; /* Light text */
+}
+
+textarea.dark-mode,
+input.dark-mode,
+select.dark-mode {
+  background-color: #3c3c3c; /* Dark mode input background */
+  color: #f5f5f5;
+  border: 1px solid #555;
+}
+
+textarea.dark-mode:focus,
+input.dark-mode:focus,
+select.dark-mode:focus {
+  border-color: #4caf50;
+}
+
+button.dark-mode {
+  background-color: #4CAF50;
+  color: white;
+}
+
+button.del-b.dark-mode {
+  background-color: #e74c3c;
+}
+
+button.ed-b.dark-mode {
+  background-color: #3498db;
+}
+
+.footer.dark-mode {
+  background-color: #242424;
+  color: #999;
+}
+
+/* Dark Mode Search Bar */
+#search.dark-mode {
+  background-color: #3c3c3c;
+  color: #f5f5f5;
+  border: 1px solid #555;
+}
+
+.dark-mode-toggle {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  color: #ffffff; /* Toggle label in dark mode */
+}
+
+.dark-mode-toggle input {
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+
+.prof {
+  display: flex;
+  align-items: center;
+  margin-left: 1560px;
+  cursor: pointer;
+}
+.prof-in-div {
+  position: absolute;
+  z-index: 1;
+  top:160px;
+  display: none;
+  background-color: rgb(14, 82, 217);
+  color: black;
+  width: 250px;
+  height: 100px;
+}
+.ym,.set {
+  margin-left: 5px;
+}
+.ym {
+  
+}
+
+
+/* Profile Container */
+.prof {
+  display: flex;
+  align-items: center;
+  position: relative; /* Ensure the dropdown is positioned relative to this container */
+  gap: 10px;
+  cursor: pointer;
+  margin-right: 20px; /* Adjust as needed */
+ /* background-color: red;*/
+}
+
+
+/* Profile Picture Styling */
+.prof img {
+  width: 50px;
+  height: 50px;
+  font-size: 14px;
+  border-radius: 50%; /* Makes it a circle */
+  object-fit: cover; /* Ensures the image doesn't stretch */
+  cursor: pointer; /* Cursor changes to pointer for better UX */
+  border: 2px solid #4CAF50; /* Green border */
+}
+
+/* Profile Dropdown */
+.pro-pro {
+  position: relative;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* Dropdown Menu Styling */
+.prof-in-div {
+  display: none; /* Hidden by default */
+  position: absolute;
+  top: 60px; /* Adjust the dropdown's position relative to the profile picture */
+  right: 0;
+  background-color: white; /* Dropdown background */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  z-index: 10; /* Ensure it stays above other elements */
+  width: 200px; /* Automatically adjusts to the content */
+  height: 250px; /* Automatically adjusts to the content */
+  cursor: default; /* Ensure default cursor for empty spaces */
+}
+
+/* Dropdown Menu Items */
+.prof-in-div div {
+  padding: 5px 10px;
+  text-align: center;
+  cursor: pointer; /* Only the content is clickable */
+}
+
+.prof-in-div div:hover {
+  background-color: #f0f0f0; /* Light hover effect */
+}
+
+/* Profile Form Styling */
+#profile-pic-form {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.pro-pro:hover {
+  background-color: rgb(109, 109, 109);
+}
+
+.custom-file-label {
+  display: inline-block;
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 14px;
+  margin-right: 10px;
+}
+
+.custom-file-label:hover {
+  background-color: #45a049;
+}
+
+#profile-pic-input {
+  display: none;
+}
+.klaasen {
+  padding: 5px 10px;
+}
+.klaasen:hover {
+  background-color: #f0f0f0;
+  cursor: pointer;
+}

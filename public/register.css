@@ -1,0 +1,110 @@
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Register Container */
+.register-container {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+}
+
+.register-container h2 {
+  margin-bottom: 1.5rem;
+  color: #4CAF50;
+}
+
+/* Form */
+.register-form .form-group {
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+
+.register-form label {
+  display: block;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+  color: #555;
+}
+
+.register-form input {
+  width: 100%;
+  padding: 0.8rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+}
+
+.register-form input:focus {
+  outline: none;
+  border-color: #4CAF50;
+  background-color: #fff;
+}
+
+/* Buttons */
+.btn-register {
+  width: 100%;
+  padding: 0.8rem;
+  font-size: 1rem;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-register:hover {
+  background-color: #45a049;
+}
+
+/* Links */
+.form-links {
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.form-links a {
+  color: #4CAF50;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.form-links a:hover {
+  color: #45a049;
+}
+
+/* Responsive Design */
+@media (max-width: 500px) {
+  .register-container {
+    padding: 1.5rem;
+  }
+
+  .btn-register {
+    font-size: 0.9rem;
+  }
+}
+
+.fill-all {
+  color:red;
+}

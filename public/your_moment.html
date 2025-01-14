@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Moments</title>
+  <link rel="stylesheet" href="ym.css">
+</head>
+<body>
+  <header class="header">
+    <h1>Your Moments</h1>
+  </header>
+  <div class="bth">Back To Home</div>
+  <main class="container">
+    <section class="moments-section">
+      <ul id="your" class="moments-list">
+        <!-- User moments will be dynamically added here -->
+      </ul>
+    </section>
+  </main>
+  <footer class="footer">
+    <p>&copy; 2024 Oddly Satisfying Tracker</p>
+  </footer>
+  <div class="re-fill-div">
+    <textarea id="refill"></textarea>
+    <select name="category" id="refill-cat" required>
+        <option value="">Select a category</option>
+            <option value="Household">Household</option>
+            <option value="Nature">Nature</option>
+            <option value="Daily Life">Daily Life</option>
+            <option value="Sports">Sports</option>
+            <option value="Technology">Technology</option>
+            <option value="Cooking & Food">Cooking & Food</option>
+    </select>
+    <button class="ok-button">Ok</button>
+    <button class="cancel-button">Cancel</button>
+</div>
+  <script src="ym.js"></script>
+</body>
+</html>
