@@ -214,7 +214,7 @@ app.post('/signup',async (req,res)=>{
   });
   const hashPass=await bcrypt.hash(password,10);
   const sql='INSERT INTO users(email,full_name,password) VALUES(?,?,?)';
-  db.query(sql,[fullname,email,hashPass],(err,result)=>{
+  db.query(sql,[email,fullname,hashPass],(err,result)=>{
     if(err) {
       console.error('Unable to insert');
       return;
